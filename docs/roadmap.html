@@ -4,7 +4,7 @@
     <meta charset=\"utf-8\" />
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
     <meta name=\"robots\" content=\"index,follow\" />
-    <title>XPII.Net — Public Docs</title>
+    <title>XPII.Net — Roadmap</title>
     <style>
       :root { color-scheme: light dark; }
       body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; padding: 2rem; line-height: 1.5; }
@@ -26,30 +26,31 @@
         <a href=\"./glossary.html\">Glossary</a>
       </nav>
 
-      <h1>XPII.Net — Public Documentation</h1>
-      <p>This site hosts public-facing documentation for the repository.</p>
-<div class="card">
-  <h2>Published materials</h2>
+      <h1>Project Goals & Roadmap</h1>
+      <div class="card">
+  <h2>Goals</h2>
   <ul>
-    <li><a href="./architecture.html">Architecture overview</a></li>
-    <li><a href="./roadmap.html">Project goals & roadmap</a></li>
-    <li><a href="./glossary.html">Glossary</a></li>
+    <li>Provide a clean, public set of documents suitable for publication.</li>
+    <li>Maintain a strong baseline against accidental data disclosure.</li>
+    <li>Keep deployment simple, reproducible, and auditable.</li>
   </ul>
 </div>
 <div class="card">
-  <h2>Key repository documents</h2>
-  <p>These are visible publicly once the GitHub repository visibility is set to <strong>Public</strong>:</p>
+  <h2>Immediate tasks</h2>
   <ul>
-    <li><code>README.md</code> — project overview</li>
-    <li><code>SECURITY.md</code> — security reporting process</li>
-    <li><code>PRIVACY.md</code> — privacy guidance</li>
-    <li><code>CONTRIBUTING.md</code> — contribution process</li>
-    <li><code>LICENSE</code> — licensing terms</li>
+    <li>Enable GitHub Pages (Settings → Pages → Source: GitHub Actions).</li>
+    <li>Set repository visibility to Public (if intended).</li>
+    <li>Set branch protection for <code>main</code> (recommended): PRs + required checks.</li>
+    <li>Fill in a real private contact method in <code>SECURITY.md</code>.</li>
   </ul>
 </div>
 <div class="card">
-  <h2>Publishing</h2>
-  <p>This site is deployed via GitHub Actions to GitHub Pages from the <code>docs/</code> folder.</p>
+  <h2>Near-term hardening</h2>
+  <ul>
+    <li>Add link checking for docs pages.</li>
+    <li>Add content review policy and change control rules.</li>
+    <li>Optional: add a static-site generator if you want richer navigation/search.</li>
+  </ul>
 </div>
 
       <footer>

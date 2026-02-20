@@ -4,7 +4,7 @@
     <meta charset=\"utf-8\" />
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
     <meta name=\"robots\" content=\"index,follow\" />
-    <title>XPII.Net — Public Docs</title>
+    <title>XPII.Net — Architecture</title>
     <style>
       :root { color-scheme: light dark; }
       body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; padding: 2rem; line-height: 1.5; }
@@ -26,30 +26,26 @@
         <a href=\"./glossary.html\">Glossary</a>
       </nav>
 
-      <h1>XPII.Net — Public Documentation</h1>
-      <p>This site hosts public-facing documentation for the repository.</p>
+      <h1>Architecture Overview</h1>
+      <div class="card">
+  <h2>What this repository is</h2>
+  <p>XPII.Net is a publication-focused repository with a static documentation site deployed from <code>docs/</code> to GitHub Pages.</p>
+</div>
 <div class="card">
-  <h2>Published materials</h2>
+  <h2>Components</h2>
   <ul>
-    <li><a href="./architecture.html">Architecture overview</a></li>
-    <li><a href="./roadmap.html">Project goals & roadmap</a></li>
-    <li><a href="./glossary.html">Glossary</a></li>
+    <li><strong>Static site</strong>: files in <code>docs/</code> are deployed as-is.</li>
+    <li><strong>CI secret scanning</strong>: a workflow runs <code>gitleaks</code> on pushes and pull requests.</li>
+    <li><strong>Automation</strong>: Dependabot updates GitHub Actions dependencies weekly.</li>
   </ul>
 </div>
 <div class="card">
-  <h2>Key repository documents</h2>
-  <p>These are visible publicly once the GitHub repository visibility is set to <strong>Public</strong>:</p>
+  <h2>Security model (baseline)</h2>
   <ul>
-    <li><code>README.md</code> — project overview</li>
-    <li><code>SECURITY.md</code> — security reporting process</li>
-    <li><code>PRIVACY.md</code> — privacy guidance</li>
-    <li><code>CONTRIBUTING.md</code> — contribution process</li>
-    <li><code>LICENSE</code> — licensing terms</li>
+    <li>Assume public visibility; do not publish credentials or private data.</li>
+    <li>Use pull requests + review as the primary safety gate.</li>
+    <li>Automated scanning helps reduce mistakes, but it is not perfect.</li>
   </ul>
-</div>
-<div class="card">
-  <h2>Publishing</h2>
-  <p>This site is deployed via GitHub Actions to GitHub Pages from the <code>docs/</code> folder.</p>
 </div>
 
       <footer>

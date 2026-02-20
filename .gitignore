@@ -1,0 +1,35 @@
+﻿# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
+
+# Secrets / credentials (never commit)
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+*.crt
+*.cer
+*.der
+*.jks
+*id_rsa*
+*id_ed25519*
+
+# Local databases / dumps
+*.sqlite
+*.db
+*.bak
+*.dump
+
+# Build artifacts
+/dist/
+/build/
+/out/

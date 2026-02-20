@@ -1,0 +1,13 @@
+﻿# Normalize text files to LF in-repo; keep Windows usability via core.autocrlf if desired.
+* text=auto eol=lf
+
+# Treat common binaries as binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.7z binary
+*.exe binary
+*.dll binary

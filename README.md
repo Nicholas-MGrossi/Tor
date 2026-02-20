@@ -1,4 +1,4 @@
-﻿# VP Publication Repository
+﻿# XPII.Net
 
 This repository is intended for publication-ready materials.
 
@@ -13,3 +13,4 @@ This repository is intended for publication-ready materials.
 
 ## Reporting security issues
 See `SECURITY.md`.
+
